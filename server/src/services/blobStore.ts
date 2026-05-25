@@ -10,13 +10,11 @@ export async function ensureContainer(): Promise<void> {
   // Vercel Blob doesn't require container creation — no-op
 }
 
-// --- Helper: find blob download URL by pathname ---
-// For private stores, use downloadUrl (includes temporary token); fall back to url for public.
+// --- Helper: find blob URL by pathname ---
 async function findBlobUrl(pathname: string): Promise<string | null> {
   const { blobs } = await list({ prefix: pathname });
   const match = blobs.find(b => b.pathname === pathname);
-  if (!match) return null;
-  return (match as any).downloadUrl ?? match.url;
+  return match?.url ?? null;
 }
 
 // --- Input blobs (uploaded files like MBRDI_TIMESHEET_PORTAL_INPUT.XLSX) ---
@@ -43,7 +41,7 @@ export async function readInputBlobBuffer(blobName: string): Promise<Buffer | nu
 export async function writeInputBlobBuffer(blobName: string, content: Buffer, contentType: string): Promise<void> {
   const pathname = `input/${blobName}`;
   await put(pathname, content, {
-    access: 'private',
+    access: 'public',
     contentType,
     addRandomSuffix: false,
   });
@@ -69,7 +67,7 @@ export async function readOutputBlob(blobName: string): Promise<string | null> {
 export async function writeOutputBlob(blobName: string, content: string): Promise<void> {
   const pathname = `output/${blobName}`;
   await put(pathname, content, {
-    access: 'private',
+    access: 'public',
     contentType: 'application/json',
     addRandomSuffix: false,
   });

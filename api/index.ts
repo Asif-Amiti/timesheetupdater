@@ -118,7 +118,7 @@ app.get('/api/health', async (req: Request, res: Response) => {
   // Test blob read/write if token is set
   if (info.blobTokenSet) {
     try {
-      await put('_health-check.txt', 'ok', { access: 'private', addRandomSuffix: false });
+      await put('_health-check.txt', 'ok', { access: 'public', addRandomSuffix: false });
       const { blobs } = await list({ prefix: '_health-check' });
       info.blobWrite = 'OK';
       info.blobRead = blobs.length > 0 ? 'OK' : 'NO BLOBS FOUND';
