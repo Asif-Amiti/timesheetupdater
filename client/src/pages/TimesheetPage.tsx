@@ -167,7 +167,7 @@ export default function TimesheetPage() {
             size="small"
             sx={{ minWidth: 250, flexGrow: 1 }}
             options={employees}
-            getOptionLabel={(emp) => `${emp.empName} (${emp.empId})`}
+            getOptionLabel={(emp) => emp.empName}
             value={selectedEmployee}
             onChange={(_, val) => setSelectedEmployee(val)}
             renderInput={(params) => <TextField {...params} label="Select Employee" />}

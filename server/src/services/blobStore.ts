@@ -1,143 +1,83 @@
-import { BlobServiceClient, ContainerClient } from '@azure/storage-blob';
+import { put, list, del, head } from '@vercel/blob';
 
-let inputContainerClient: ContainerClient | null = null;
-let outputContainerClient: ContainerClient | null = null;
-
-function getConnectionString(): string {
-  return process.env.AZURE_STORAGE_CONNECTION_STRING || '';
-}
-
-function getInputContainerName(): string {
-  return process.env.AZURE_STORAGE_CONTAINER || 'timesheet-input';
-}
-
-function getOutputContainerName(): string {
-  return process.env.AZURE_STORAGE_OUTPUT_CONTAINER || 'timesheet-output';
-}
-
-function getInputContainer(): ContainerClient | null {
-  const connStr = getConnectionString();
-  if (!connStr) return null;
-  if (!inputContainerClient) {
-    const blobService = BlobServiceClient.fromConnectionString(connStr);
-    inputContainerClient = blobService.getContainerClient(getInputContainerName());
-  }
-  return inputContainerClient;
-}
-
-function getOutputContainer(): ContainerClient | null {
-  const connStr = getConnectionString();
-  if (!connStr) return null;
-  if (!outputContainerClient) {
-    const blobService = BlobServiceClient.fromConnectionString(connStr);
-    outputContainerClient = blobService.getContainerClient(getOutputContainerName());
-  }
-  return outputContainerClient;
-}
+// Vercel Blob uses the BLOB_READ_WRITE_TOKEN env var automatically.
 
 export function isBlobEnabled(): boolean {
-  return !!getConnectionString();
+  return !!process.env.BLOB_READ_WRITE_TOKEN;
 }
 
 export async function ensureContainer(): Promise<void> {
-  const input = getInputContainer();
-  const output = getOutputContainer();
-  if (input) await input.createIfNotExists();
-  if (output) await output.createIfNotExists();
+  // Vercel Blob doesn't require container creation — no-op
 }
 
-// --- Input container (read-only after upload) ---
+// --- Helper: find blob URL by pathname ---
+async function findBlobUrl(pathname: string): Promise<string | null> {
+  const { blobs } = await list({ prefix: pathname });
+  const match = blobs.find(b => b.pathname === pathname);
+  return match?.url ?? null;
+}
+
+// --- Input blobs (uploaded files like MBRDI_TIMESHEET_PORTAL_INPUT.XLSX) ---
+
 export async function readInputBlob(blobName: string): Promise<string | null> {
-  const container = getInputContainer();
-  if (!container) return null;
-  const blobClient = container.getBlockBlobClient(blobName);
-  try {
-    const response = await blobClient.download(0);
-    const body = response.readableStreamBody;
-    if (!body) return null;
-    const chunks: Buffer[] = [];
-    for await (const chunk of body) {
-      chunks.push(Buffer.isBuffer(chunk) ? chunk : Buffer.from(chunk));
-    }
-    return Buffer.concat(chunks).toString('utf-8');
-  } catch (err: any) {
-    if (err.statusCode === 404) return null;
-    throw err;
-  }
+  const pathname = `input/${blobName}`;
+  const url = await findBlobUrl(pathname);
+  if (!url) return null;
+  const response = await fetch(url);
+  if (!response.ok) return null;
+  return response.text();
 }
 
 export async function readInputBlobBuffer(blobName: string): Promise<Buffer | null> {
-  const container = getInputContainer();
-  if (!container) return null;
-  const blobClient = container.getBlockBlobClient(blobName);
-  try {
-    const response = await blobClient.download(0);
-    const body = response.readableStreamBody;
-    if (!body) return null;
-    const chunks: Buffer[] = [];
-    for await (const chunk of body) {
-      chunks.push(Buffer.isBuffer(chunk) ? chunk : Buffer.from(chunk));
-    }
-    return Buffer.concat(chunks);
-  } catch (err: any) {
-    if (err.statusCode === 404) return null;
-    throw err;
-  }
+  const pathname = `input/${blobName}`;
+  const url = await findBlobUrl(pathname);
+  if (!url) return null;
+  const response = await fetch(url);
+  if (!response.ok) return null;
+  const arrayBuffer = await response.arrayBuffer();
+  return Buffer.from(arrayBuffer);
 }
 
 export async function writeInputBlobBuffer(blobName: string, content: Buffer, contentType: string): Promise<void> {
-  const container = getInputContainer();
-  if (!container) return;
-  const blobClient = container.getBlockBlobClient(blobName);
-  await blobClient.upload(content, content.length, {
-    blobHTTPHeaders: { blobContentType: contentType },
+  const pathname = `input/${blobName}`;
+  await put(pathname, content, {
+    access: 'public',
+    contentType,
+    addRandomSuffix: false,
   });
 }
 
 export async function inputBlobExists(blobName: string): Promise<boolean> {
-  const container = getInputContainer();
-  if (!container) return false;
-  const blobClient = container.getBlockBlobClient(blobName);
-  return blobClient.exists();
+  const pathname = `input/${blobName}`;
+  const url = await findBlobUrl(pathname);
+  return url !== null;
 }
 
-// --- Output container (read-write for app data) ---
+// --- Output blobs (app data: timesheets, overrides, holidays) ---
+
 export async function readOutputBlob(blobName: string): Promise<string | null> {
-  const container = getOutputContainer();
-  if (!container) return null;
-  const blobClient = container.getBlockBlobClient(blobName);
-  try {
-    const response = await blobClient.download(0);
-    const body = response.readableStreamBody;
-    if (!body) return null;
-    const chunks: Buffer[] = [];
-    for await (const chunk of body) {
-      chunks.push(Buffer.isBuffer(chunk) ? chunk : Buffer.from(chunk));
-    }
-    return Buffer.concat(chunks).toString('utf-8');
-  } catch (err: any) {
-    if (err.statusCode === 404) return null;
-    throw err;
-  }
+  const pathname = `output/${blobName}`;
+  const url = await findBlobUrl(pathname);
+  if (!url) return null;
+  const response = await fetch(url);
+  if (!response.ok) return null;
+  return response.text();
 }
 
 export async function writeOutputBlob(blobName: string, content: string): Promise<void> {
-  const container = getOutputContainer();
-  if (!container) return;
-  const blobClient = container.getBlockBlobClient(blobName);
-  await blobClient.upload(content, Buffer.byteLength(content), {
-    blobHTTPHeaders: { blobContentType: 'application/json' },
+  const pathname = `output/${blobName}`;
+  await put(pathname, content, {
+    access: 'public',
+    contentType: 'application/json',
+    addRandomSuffix: false,
   });
 }
 
 export async function listOutputBlobs(prefix: string): Promise<string[]> {
-  const container = getOutputContainer();
-  if (!container) return [];
-  const names: string[] = [];
-  for await (const blob of container.listBlobsFlat({ prefix })) {
-    names.push(blob.name);
-  }
-  return names;
+  const pathname = `output/${prefix}`;
+  const { blobs } = await list({ prefix: pathname });
+  // Return names relative to 'output/' to match existing API
+  return blobs.map(b => b.pathname.replace(/^output\//, ''));
 }
 
 // --- Legacy aliases (kept for backward compat, map to output) ---

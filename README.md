@@ -2,49 +2,60 @@ timesheetupdater/
 ├── client/                          # React SPA (Vite + TypeScript + MUI)
 │   ├── src/
 │   │   ├── App.tsx                  # Root with auth & routing
-│   │   ├── auth/msalConfig.ts       # Azure AD / MSAL config
 │   │   ├── components/
 │   │   │   ├── Layout.tsx           # App shell (nav drawer, header)
 │   │   │   └── CalendarGrid.tsx     # Day-by-day grid (mobile responsive)
 │   │   ├── pages/
 │   │   │   ├── TimesheetPage.tsx    # Fill timesheet (auto-saves)
 │   │   │   ├── DownloadPage.tsx     # Download Excel
-│   │   │   └── LoginPage.tsx        # Microsoft login
+│   │   │   └── AdminPage.tsx        # Admin panel
 │   │   └── services/api.ts          # Axios API client
-│   └── .env                         # Vite env vars
-├── server/                          # Express + TypeScript API
+├── api/                             # Vercel Serverless Function (Express)
+│   └── index.ts                     # API handler (wraps Express app)
+├── server/                          # Express + TypeScript API (shared source)
 │   ├── src/
-│   │   ├── index.ts                 # Entry point
-│   │   ├── auth/entraAuth.ts        # JWT validation (dev bypass included)
+│   │   ├── index.ts                 # Local dev entry point
 │   │   ├── routes/
 │   │   │   ├── employees.ts         # GET /api/employees
 │   │   │   ├── timesheet.ts         # GET/PUT /api/timesheet/:month/:empId
-│   │   │   └── download.ts          # GET /api/download/:month → .xlsx
+│   │   │   ├── download.ts          # GET /api/download/:month → .xlsx
+│   │   │   └── admin.ts             # Admin routes (upload, manage)
 │   │   ├── services/
-│   │   │   ├── dataStore.ts         # JSON file read/write (atomic)
+│   │   │   ├── dataStore.ts         # JSON file read/write + blob storage
+│   │   │   ├── blobStore.ts         # Azure Blob Storage adapter
 │   │   │   └── excelExport.ts       # ExcelJS workbook generation
 │   │   └── scripts/seedEmployees.ts # Import from Excel
-│   ├── data/                        # Seeded data (91 employees, 6 months)
-│   └── .env
-├── .github/workflows/deploy.yml     # CI/CD to Azure App Service
+│   ├── data/                        # Seeded data (bundled for initial deploy)
+├── vercel.json                      # Vercel deployment configuration
 └── package.json                     # Root scripts
 
 
-run: 
-npm install; npm run dev
+## Local Development
 
-Deploy:
-<!-- az webapp up --name ihc-time-app --resource-group mbmdp-e-d-x2e-appservice1-rg --runtime "NODE:24-lts"
+```bash
+npm run install:all
+npm run dev
+```
 
-az webapp up --name ihc-time-app --resource-group mbmdp-e-d-x2e-appservice1-rg --subscription 6936d4f0-fc5f-4dbd-b78a-f69d7ebca218 -->
+## Deploy to Vercel
 
-"c:\Users\maasifk\Documents\CodeBase\timesheetupdater\server"; npm install; npm run build; npm install --omit=dev; cd ..; npm run build:client; Remove-Item app.zip -Force -ErrorAction SilentlyContinue; tar -acf app.zip package.json server/dist server/package.json server/node_modules server/data server/.env client/dist; az webapp deploy --name ihc-time-app --resource-group mbmdp-e-d-x2e-appservice1-rg --src-path app.zip --type zip --clean true
+1. Push this repo to GitHub/GitLab/Bitbucket
+2. Import the project in [Vercel Dashboard](https://vercel.com/new)
+3. Set environment variables in Vercel project settings:
+   - `BLOB_READ_WRITE_TOKEN` — Required for persistent data storage (from Vercel Blob store)
+4. Deploy — Vercel will auto-detect the configuration from `vercel.json`
 
-az webapp deploy --name ihc-time-app --resource-group mbmdp-e-d-x2e-appservice1-rg --subscription 6936d4f0-fc5f-4dbd-b78a-f69d7ebca218 --src-path app.zip --type zip --clean true
+### Important Notes
+
+- **Data persistence**: Vercel serverless functions have a read-only filesystem. You MUST create a Vercel Blob store and set `BLOB_READ_WRITE_TOKEN` for production use.
+- **Local dev** still uses the filesystem under `server/data/` by default (when `BLOB_READ_WRITE_TOKEN` is not set).
+- The `api/index.ts` serverless function wraps the Express app and is the single entry point for all `/api/*` requests.
+
+## Architecture
 
 ┌─────────────────────────────────────────────────────┐
-│  timesheet-input container (READ-ONLY)              │
-│  └── MBRDI_TIMESHEET_PORTAL_INPUT.XLSX              │
+│  Vercel Blob: input/ prefix (READ-ONLY)             │
+│  └── input/MBRDI_TIMESHEET_PORTAL_INPUT.XLSX        │
 │      ├── May'26 sheet  ─┐                           │
 │      ├── Jun'26 sheet   │ Parsed on upload          │
 │      └── ... (has Emp Id headers + day columns)     │
@@ -54,11 +65,11 @@ az webapp deploy --name ihc-time-app --resource-group mbmdp-e-d-x2e-appservice1-
                     │ 2. Timesheet data from month-named sheets
                     ▼
 ┌─────────────────────────────────────────────────────┐
-│  timesheet-output container (READ-WRITE)            │
-│  ├── employee-overrides.json  (add/delete overlay)  │
-│  ├── timesheets/2026-05.json  (May timesheet data)  │
-│  ├── timesheets/2026-06.json  (Jun timesheet data)  │
-│  └── holidays.json                                  │
+│  Vercel Blob: output/ prefix (READ-WRITE)           │
+│  ├── output/employee-overrides.json                 │
+│  ├── output/timesheets/2026-05.json                 │
+│  ├── output/timesheets/2026-06.json                 │
+│  └── output/holidays.json                           │
 └─────────────────────────────────────────────────────┘
                     │
                     ▼ Download any month
