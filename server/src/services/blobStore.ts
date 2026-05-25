@@ -1,4 +1,5 @@
 import { put, list, del, head } from '@vercel/blob';
+/// <reference lib="dom" />
 
 // Vercel Blob uses the BLOB_READ_WRITE_TOKEN env var automatically.
 

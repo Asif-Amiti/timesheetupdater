@@ -1,4 +1,4 @@
-import express from 'express';
+import express, { Request, Response, NextFunction } from 'express';
 import cors from 'cors';
 import path from 'path';
 import fs from 'fs';
@@ -53,7 +53,7 @@ async function ensureInitialized() {
 }
 
 // Ensure initialization before handling any request
-app.use(async (req, res, next) => {
+app.use(async (req: Request, res: Response, next: NextFunction) => {
   try {
     await ensureInitialized();
     next();
