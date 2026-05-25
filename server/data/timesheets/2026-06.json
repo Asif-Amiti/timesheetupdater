@@ -1,0 +1,815 @@
+{
+  "month": "2026-06",
+  "entries": {
+    "F10572": {
+      "empId": "F10572",
+      "empName": "Aakash Arora",
+      "days": {},
+      "reason": "",
+      "updatedTracker": true,
+      "updatedClient": false,
+      "updatedWorkday": false,
+      "lastModified": "2026-05-12T14:46:27.465Z"
+    },
+    "F12020": {
+      "empId": "F12020",
+      "empName": "Aashish Kaushik",
+      "days": {},
+      "reason": "",
+      "updatedTracker": false,
+      "updatedClient": false,
+      "updatedWorkday": false,
+      "lastModified": "2026-05-12T14:46:27.465Z"
+    },
+    "F16244": {
+      "empId": "F16244",
+      "empName": "Abhishek Kumar",
+      "days": {},
+      "reason": "",
+      "updatedTracker": false,
+      "updatedClient": false,
+      "updatedWorkday": false,
+      "lastModified": "2026-05-12T14:46:27.465Z"
+    },
+    "F17557": {
+      "empId": "F17557",
+      "empName": "Adithya Udupa",
+      "days": {},
+      "reason": "",
+      "updatedTracker": false,
+      "updatedClient": false,
+      "updatedWorkday": false,
+      "lastModified": "2026-05-12T14:46:27.465Z"
+    },
+    "F13935": {
+      "empId": "F13935",
+      "empName": "Akash Badarinath",
+      "days": {},
+      "reason": "",
+      "updatedTracker": false,
+      "updatedClient": false,
+      "updatedWorkday": false,
+      "lastModified": "2026-05-12T14:46:27.465Z"
+    },
+    "F15418": {
+      "empId": "F15418",
+      "empName": "Ankit .",
+      "days": {},
+      "reason": "",
+      "updatedTracker": false,
+      "updatedClient": false,
+      "updatedWorkday": false,
+      "lastModified": "2026-05-12T14:46:27.465Z"
+    },
+    "F15194": {
+      "empId": "F15194",
+      "empName": "Ankit Khandelwal",
+      "days": {},
+      "reason": "",
+      "updatedTracker": false,
+      "updatedClient": false,
+      "updatedWorkday": false,
+      "lastModified": "2026-05-12T14:46:27.465Z"
+    },
+    "F16266": {
+      "empId": "F16266",
+      "empName": "Anupam Kumar Tiwari",
+      "days": {},
+      "reason": "",
+      "updatedTracker": false,
+      "updatedClient": false,
+      "updatedWorkday": false,
+      "lastModified": "2026-05-12T14:46:27.465Z"
+    },
+    "F17311": {
+      "empId": "F17311",
+      "empName": "Arbaz Ur Rehman Khan",
+      "days": {},
+      "reason": "",
+      "updatedTracker": true,
+      "updatedClient": false,
+      "updatedWorkday": true,
+      "lastModified": "2026-05-12T14:46:27.465Z"
+    },
+    "F15984": {
+      "empId": "F15984",
+      "empName": "Arindom Goswami",
+      "days": {},
+      "reason": "",
+      "updatedTracker": false,
+      "updatedClient": false,
+      "updatedWorkday": false,
+      "lastModified": "2026-05-12T14:46:27.465Z"
+    },
+    "F07920": {
+      "empId": "F07920",
+      "empName": "Arjit Sharma",
+      "days": {},
+      "reason": "",
+      "updatedTracker": false,
+      "updatedClient": false,
+      "updatedWorkday": false,
+      "lastModified": "2026-05-12T14:46:27.465Z"
+    },
+    "F08462": {
+      "empId": "F08462",
+      "empName": "Ashokkumar Subramani",
+      "days": {},
+      "reason": "",
+      "updatedTracker": false,
+      "updatedClient": false,
+      "updatedWorkday": false,
+      "lastModified": "2026-05-12T14:46:27.465Z"
+    },
+    "F07471": {
+      "empId": "F07471",
+      "empName": "Avinash .",
+      "days": {},
+      "reason": "",
+      "updatedTracker": false,
+      "updatedClient": false,
+      "updatedWorkday": false,
+      "lastModified": "2026-05-12T14:46:27.465Z"
+    },
+    "F17726": {
+      "empId": "F17726",
+      "empName": "Bhanu Priya",
+      "days": {},
+      "reason": "",
+      "updatedTracker": true,
+      "updatedClient": false,
+      "updatedWorkday": false,
+      "lastModified": "2026-05-12T14:46:27.465Z"
+    },
+    "F05022": {
+      "empId": "F05022",
+      "empName": "Chaitanya Deepak",
+      "days": {},
+      "reason": "",
+      "updatedTracker": true,
+      "updatedClient": false,
+      "updatedWorkday": false,
+      "lastModified": "2026-05-12T14:46:27.465Z"
+    },
+    "F14094": {
+      "empId": "F14094",
+      "empName": "Gokul Vasanth Susindran",
+      "days": {},
+      "reason": "",
+      "updatedTracker": false,
+      "updatedClient": false,
+      "updatedWorkday": false,
+      "lastModified": "2026-05-12T14:46:27.465Z"
+    },
+    "F09402": {
+      "empId": "F09402",
+      "empName": "Gowtham G",
+      "days": {},
+      "reason": "",
+      "updatedTracker": false,
+      "updatedClient": false,
+      "updatedWorkday": false,
+      "lastModified": "2026-05-12T14:46:27.465Z"
+    },
+    "F08055": {
+      "empId": "F08055",
+      "empName": "K Deepak",
+      "days": {},
+      "reason": "",
+      "updatedTracker": false,
+      "updatedClient": false,
+      "updatedWorkday": false,
+      "lastModified": "2026-05-12T14:46:27.465Z"
+    },
+    "F13133": {
+      "empId": "F13133",
+      "empName": "Kartikey Rai",
+      "days": {},
+      "reason": "",
+      "updatedTracker": false,
+      "updatedClient": false,
+      "updatedWorkday": false,
+      "lastModified": "2026-05-12T14:46:27.465Z"
+    },
+    "F15951": {
+      "empId": "F15951",
+      "empName": "Kesani Srichandana",
+      "days": {},
+      "reason": "",
+      "updatedTracker": false,
+      "updatedClient": false,
+      "updatedWorkday": false,
+      "lastModified": "2026-05-12T14:46:27.465Z"
+    },
+    "F16291": {
+      "empId": "F16291",
+      "empName": "Khasim Pannegatla",
+      "days": {},
+      "reason": "",
+      "updatedTracker": false,
+      "updatedClient": false,
+      "updatedWorkday": false,
+      "lastModified": "2026-05-12T14:46:27.465Z"
+    },
+    "F16247": {
+      "empId": "F16247",
+      "empName": "Kiran Mai P",
+      "days": {},
+      "reason": "",
+      "updatedTracker": false,
+      "updatedClient": false,
+      "updatedWorkday": false,
+      "lastModified": "2026-05-12T14:46:27.465Z"
+    },
+    "F12415": {
+      "empId": "F12415",
+      "empName": "Kunal Kumar",
+      "days": {},
+      "reason": "",
+      "updatedTracker": false,
+      "updatedClient": false,
+      "updatedWorkday": false,
+      "lastModified": "2026-05-12T14:46:27.465Z"
+    },
+    "F12766": {
+      "empId": "F12766",
+      "empName": "Madhavi Latha Kotturu",
+      "days": {},
+      "reason": "",
+      "updatedTracker": false,
+      "updatedClient": false,
+      "updatedWorkday": false,
+      "lastModified": "2026-05-12T14:46:27.465Z"
+    },
+    "F06490": {
+      "empId": "F06490",
+      "empName": "Mahamad Asif",
+      "days": {},
+      "reason": "",
+      "updatedTracker": false,
+      "updatedClient": false,
+      "updatedWorkday": false,
+      "lastModified": "2026-05-12T14:46:27.465Z"
+    },
+    "F14195": {
+      "empId": "F14195",
+      "empName": "Manish Khare",
+      "days": {},
+      "reason": "",
+      "updatedTracker": false,
+      "updatedClient": false,
+      "updatedWorkday": false,
+      "lastModified": "2026-05-12T14:46:27.465Z"
+    },
+    "F16444": {
+      "empId": "F16444",
+      "empName": "Manish Rajesh Sharma",
+      "days": {},
+      "reason": "",
+      "updatedTracker": false,
+      "updatedClient": false,
+      "updatedWorkday": false,
+      "lastModified": "2026-05-12T14:46:27.465Z"
+    },
+    "F13899": {
+      "empId": "F13899",
+      "empName": "Muhammed Suhail E K",
+      "days": {},
+      "reason": "",
+      "updatedTracker": false,
+      "updatedClient": false,
+      "updatedWorkday": false,
+      "lastModified": "2026-05-12T14:46:27.465Z"
+    },
+    "F13753": {
+      "empId": "F13753",
+      "empName": "Nagarjun K",
+      "days": {},
+      "reason": "",
+      "updatedTracker": false,
+      "updatedClient": false,
+      "updatedWorkday": false,
+      "lastModified": "2026-05-12T14:46:27.465Z"
+    },
+    "F14646": {
+      "empId": "F14646",
+      "empName": "Nihar Bastia",
+      "days": {},
+      "reason": "",
+      "updatedTracker": false,
+      "updatedClient": false,
+      "updatedWorkday": false,
+      "lastModified": "2026-05-12T14:46:27.465Z"
+    },
+    "F11421": {
+      "empId": "F11421",
+      "empName": "Pavan Kumar Reddy Tondapu",
+      "days": {},
+      "reason": "",
+      "updatedTracker": true,
+      "updatedClient": false,
+      "updatedWorkday": true,
+      "lastModified": "2026-05-12T14:46:27.465Z"
+    },
+    "F09792": {
+      "empId": "F09792",
+      "empName": "Pinninti Ravindra",
+      "days": {},
+      "reason": "",
+      "updatedTracker": false,
+      "updatedClient": false,
+      "updatedWorkday": false,
+      "lastModified": "2026-05-12T14:46:27.465Z"
+    },
+    "F15834": {
+      "empId": "F15834",
+      "empName": "Prajwal Athrey",
+      "days": {},
+      "reason": "",
+      "updatedTracker": false,
+      "updatedClient": false,
+      "updatedWorkday": false,
+      "lastModified": "2026-05-12T14:46:27.465Z"
+    },
+    "F14085": {
+      "empId": "F14085",
+      "empName": "Prakash Solanki",
+      "days": {},
+      "reason": "",
+      "updatedTracker": false,
+      "updatedClient": false,
+      "updatedWorkday": false,
+      "lastModified": "2026-05-12T14:46:27.465Z"
+    },
+    "F14985": {
+      "empId": "F14985",
+      "empName": "Pranshul Gupta",
+      "days": {},
+      "reason": "",
+      "updatedTracker": false,
+      "updatedClient": false,
+      "updatedWorkday": false,
+      "lastModified": "2026-05-12T14:46:27.465Z"
+    },
+    "F16097": {
+      "empId": "F16097",
+      "empName": "Prasad Vinayagam Naidu",
+      "days": {},
+      "reason": "",
+      "updatedTracker": false,
+      "updatedClient": false,
+      "updatedWorkday": false,
+      "lastModified": "2026-05-12T14:46:27.465Z"
+    },
+    "F17300": {
+      "empId": "F17300",
+      "empName": "Preet Kanwar Singh",
+      "days": {},
+      "reason": "",
+      "updatedTracker": false,
+      "updatedClient": false,
+      "updatedWorkday": false,
+      "lastModified": "2026-05-12T14:46:27.465Z"
+    },
+    "F16361": {
+      "empId": "F16361",
+      "empName": "Rajarshi Pal",
+      "days": {},
+      "reason": "",
+      "updatedTracker": false,
+      "updatedClient": false,
+      "updatedWorkday": false,
+      "lastModified": "2026-05-12T14:46:27.465Z"
+    },
+    "F16719": {
+      "empId": "F16719",
+      "empName": "Rajat Kumar Kar",
+      "days": {},
+      "reason": "",
+      "updatedTracker": false,
+      "updatedClient": false,
+      "updatedWorkday": false,
+      "lastModified": "2026-05-12T14:46:27.465Z"
+    },
+    "F16157": {
+      "empId": "F16157",
+      "empName": "Rajkiran Edunuri",
+      "days": {},
+      "reason": "",
+      "updatedTracker": false,
+      "updatedClient": false,
+      "updatedWorkday": false,
+      "lastModified": "2026-05-12T14:46:27.465Z"
+    },
+    "F17359": {
+      "empId": "F17359",
+      "empName": "RAMASWAMY KOMMAVARAPU",
+      "days": {},
+      "reason": "",
+      "updatedTracker": false,
+      "updatedClient": false,
+      "updatedWorkday": false,
+      "lastModified": "2026-05-12T14:46:27.465Z"
+    },
+    "F02721": {
+      "empId": "F02721",
+      "empName": "Ratul Ramchandani",
+      "days": {},
+      "reason": "",
+      "updatedTracker": false,
+      "updatedClient": false,
+      "updatedWorkday": false,
+      "lastModified": "2026-05-12T14:46:27.465Z"
+    },
+    "F17534": {
+      "empId": "F17534",
+      "empName": "Rishang Santhpale",
+      "days": {},
+      "reason": "",
+      "updatedTracker": false,
+      "updatedClient": false,
+      "updatedWorkday": false,
+      "lastModified": "2026-05-12T14:46:27.465Z"
+    },
+    "F14333": {
+      "empId": "F14333",
+      "empName": "Ritobrita De",
+      "days": {},
+      "reason": "",
+      "updatedTracker": false,
+      "updatedClient": false,
+      "updatedWorkday": false,
+      "lastModified": "2026-05-12T14:46:27.465Z"
+    },
+    "F09515": {
+      "empId": "F09515",
+      "empName": "Roshan Raghavendra Srinivas",
+      "days": {},
+      "reason": "",
+      "updatedTracker": false,
+      "updatedClient": false,
+      "updatedWorkday": false,
+      "lastModified": "2026-05-12T14:46:27.465Z"
+    },
+    "F15145": {
+      "empId": "F15145",
+      "empName": "Rubini Subash",
+      "days": {},
+      "reason": "",
+      "updatedTracker": false,
+      "updatedClient": false,
+      "updatedWorkday": false,
+      "lastModified": "2026-05-12T14:46:27.465Z"
+    },
+    "F13601": {
+      "empId": "F13601",
+      "empName": "Saravanan Bs",
+      "days": {},
+      "reason": "",
+      "updatedTracker": false,
+      "updatedClient": false,
+      "updatedWorkday": false,
+      "lastModified": "2026-05-12T14:46:27.465Z"
+    },
+    "F08818": {
+      "empId": "F08818",
+      "empName": "Satheesh Kumar Kaliappan",
+      "days": {},
+      "reason": "",
+      "updatedTracker": false,
+      "updatedClient": false,
+      "updatedWorkday": false,
+      "lastModified": "2026-05-12T14:46:27.465Z"
+    },
+    "F15781": {
+      "empId": "F15781",
+      "empName": "Shah Tapan",
+      "days": {},
+      "reason": "",
+      "updatedTracker": false,
+      "updatedClient": false,
+      "updatedWorkday": false,
+      "lastModified": "2026-05-12T14:46:27.465Z"
+    },
+    "F15363": {
+      "empId": "F15363",
+      "empName": "Shekhar Singh",
+      "days": {},
+      "reason": "",
+      "updatedTracker": false,
+      "updatedClient": false,
+      "updatedWorkday": false,
+      "lastModified": "2026-05-12T14:46:27.465Z"
+    },
+    "F16819": {
+      "empId": "F16819",
+      "empName": "Shivani Kumari",
+      "days": {},
+      "reason": "",
+      "updatedTracker": false,
+      "updatedClient": false,
+      "updatedWorkday": false,
+      "lastModified": "2026-05-12T14:46:27.465Z"
+    },
+    "F08227": {
+      "empId": "F08227",
+      "empName": "Shubham Bhaskar",
+      "days": {},
+      "reason": "",
+      "updatedTracker": false,
+      "updatedClient": false,
+      "updatedWorkday": false,
+      "lastModified": "2026-05-12T14:46:27.465Z"
+    },
+    "F11804": {
+      "empId": "F11804",
+      "empName": "Shweta Dubey",
+      "days": {},
+      "reason": "",
+      "updatedTracker": false,
+      "updatedClient": false,
+      "updatedWorkday": false,
+      "lastModified": "2026-05-12T14:46:27.465Z"
+    },
+    "F13807": {
+      "empId": "F13807",
+      "empName": "Shyam Sunder Thakur",
+      "days": {},
+      "reason": "",
+      "updatedTracker": false,
+      "updatedClient": false,
+      "updatedWorkday": false,
+      "lastModified": "2026-05-12T14:46:27.465Z"
+    },
+    "F14313": {
+      "empId": "F14313",
+      "empName": "Sujith Kumar B",
+      "days": {},
+      "reason": "",
+      "updatedTracker": false,
+      "updatedClient": false,
+      "updatedWorkday": false,
+      "lastModified": "2026-05-12T14:46:27.465Z"
+    },
+    "F16597": {
+      "empId": "F16597",
+      "empName": "Susatya Sinha",
+      "days": {},
+      "reason": "",
+      "updatedTracker": true,
+      "updatedClient": false,
+      "updatedWorkday": false,
+      "lastModified": "2026-05-12T14:46:27.465Z"
+    },
+    "F07286": {
+      "empId": "F07286",
+      "empName": "Sushanth S",
+      "days": {},
+      "reason": "",
+      "updatedTracker": false,
+      "updatedClient": false,
+      "updatedWorkday": false,
+      "lastModified": "2026-05-12T14:46:27.465Z"
+    },
+    "F15206": {
+      "empId": "F15206",
+      "empName": "Trisha Ranjan",
+      "days": {},
+      "reason": "",
+      "updatedTracker": false,
+      "updatedClient": false,
+      "updatedWorkday": false,
+      "lastModified": "2026-05-12T14:46:27.465Z"
+    },
+    "F11959": {
+      "empId": "F11959",
+      "empName": "Utkarsh Chaudhary",
+      "days": {},
+      "reason": "",
+      "updatedTracker": false,
+      "updatedClient": false,
+      "updatedWorkday": false,
+      "lastModified": "2026-05-12T14:46:27.465Z"
+    },
+    "F13312": {
+      "empId": "F13312",
+      "empName": "Utkarsh Sharma",
+      "days": {},
+      "reason": "",
+      "updatedTracker": true,
+      "updatedClient": false,
+      "updatedWorkday": true,
+      "lastModified": "2026-05-12T14:46:27.465Z"
+    },
+    "F15410": {
+      "empId": "F15410",
+      "empName": "Vaishnavee Awadhesh Gupta",
+      "days": {},
+      "reason": "",
+      "updatedTracker": false,
+      "updatedClient": false,
+      "updatedWorkday": false,
+      "lastModified": "2026-05-12T14:46:27.465Z"
+    },
+    "F12344": {
+      "empId": "F12344",
+      "empName": "Vikash Kumar",
+      "days": {},
+      "reason": "",
+      "updatedTracker": false,
+      "updatedClient": false,
+      "updatedWorkday": false,
+      "lastModified": "2026-05-12T14:46:27.465Z"
+    },
+    "F16600": {
+      "empId": "F16600",
+      "empName": "Vaishnavi Prasad",
+      "days": {},
+      "reason": "",
+      "updatedTracker": false,
+      "updatedClient": false,
+      "updatedWorkday": false,
+      "lastModified": "2026-05-12T14:46:27.465Z"
+    },
+    "F14490": {
+      "empId": "F14490",
+      "empName": "Vanshika Jain",
+      "days": {},
+      "reason": "",
+      "updatedTracker": false,
+      "updatedClient": false,
+      "updatedWorkday": false,
+      "lastModified": "2026-05-12T14:46:27.465Z"
+    },
+    "F16925": {
+      "empId": "F16925",
+      "empName": "Vinodhkumar Santhakumar",
+      "days": {},
+      "reason": "",
+      "updatedTracker": false,
+      "updatedClient": false,
+      "updatedWorkday": false,
+      "lastModified": "2026-05-12T14:46:27.465Z"
+    },
+    "F11776": {
+      "empId": "F11776",
+      "empName": "Neha Agrawal",
+      "days": {},
+      "reason": "",
+      "updatedTracker": false,
+      "updatedClient": false,
+      "updatedWorkday": false,
+      "lastModified": "2026-05-12T14:46:27.465Z"
+    },
+    "F12652": {
+      "empId": "F12652",
+      "empName": "Seshadri Mohana Lakshmi Sahithi",
+      "days": {},
+      "reason": "",
+      "updatedTracker": false,
+      "updatedClient": false,
+      "updatedWorkday": false,
+      "lastModified": "2026-05-12T14:46:27.465Z"
+    },
+    "F14503": {
+      "empId": "F14503",
+      "empName": "Shivangi Khanna",
+      "days": {},
+      "reason": "",
+      "updatedTracker": false,
+      "updatedClient": false,
+      "updatedWorkday": false,
+      "lastModified": "2026-05-12T14:46:27.465Z"
+    },
+    "F15226": {
+      "empId": "F15226",
+      "empName": "Jaiyanth RB",
+      "days": {},
+      "reason": "",
+      "updatedTracker": false,
+      "updatedClient": false,
+      "updatedWorkday": false,
+      "lastModified": "2026-05-12T14:46:27.465Z"
+    },
+    "F16221": {
+      "empId": "F16221",
+      "empName": "Dijal Tom",
+      "days": {},
+      "reason": "",
+      "updatedTracker": false,
+      "updatedClient": false,
+      "updatedWorkday": false,
+      "lastModified": "2026-05-12T14:46:27.465Z"
+    },
+    "F17891": {
+      "empId": "F17891",
+      "empName": "Hithesh G R",
+      "days": {},
+      "reason": "",
+      "updatedTracker": false,
+      "updatedClient": false,
+      "updatedWorkday": false,
+      "lastModified": "2026-05-12T14:46:27.465Z"
+    },
+    "F17922": {
+      "empId": "F17922",
+      "empName": "Sunny .",
+      "days": {},
+      "reason": "",
+      "updatedTracker": false,
+      "updatedClient": false,
+      "updatedWorkday": false,
+      "lastModified": "2026-05-12T14:46:27.465Z"
+    },
+    "F14764": {
+      "empId": "F14764",
+      "empName": "Sourav Das",
+      "days": {},
+      "reason": "",
+      "updatedTracker": false,
+      "updatedClient": false,
+      "updatedWorkday": false,
+      "lastModified": "2026-05-12T14:46:27.465Z"
+    },
+    "F16824": {
+      "empId": "F16824",
+      "empName": "Abhishek Kamboj",
+      "days": {},
+      "reason": "",
+      "updatedTracker": false,
+      "updatedClient": false,
+      "updatedWorkday": false,
+      "lastModified": "2026-05-12T14:46:27.465Z"
+    },
+    "F15089": {
+      "empId": "F15089",
+      "empName": "Amal K",
+      "days": {},
+      "reason": "",
+      "updatedTracker": false,
+      "updatedClient": false,
+      "updatedWorkday": false,
+      "lastModified": "2026-05-12T14:46:27.465Z"
+    },
+    "F14242": {
+      "empId": "F14242",
+      "empName": "Rajiv Kumar",
+      "days": {},
+      "reason": "",
+      "updatedTracker": false,
+      "updatedClient": false,
+      "updatedWorkday": false,
+      "lastModified": "2026-05-12T14:46:27.465Z"
+    },
+    "F16906": {
+      "empId": "F16906",
+      "empName": "Adarsh Kumar Singh",
+      "days": {},
+      "reason": "",
+      "updatedTracker": false,
+      "updatedClient": false,
+      "updatedWorkday": false,
+      "lastModified": "2026-05-12T14:46:27.465Z"
+    },
+    "F17997": {
+      "empId": "F17997",
+      "empName": "Sasidharan N",
+      "days": {},
+      "reason": "",
+      "updatedTracker": false,
+      "updatedClient": false,
+      "updatedWorkday": false,
+      "lastModified": "2026-05-12T14:46:27.465Z"
+    },
+    "F18014": {
+      "empId": "F18014",
+      "empName": "Chinmaya Mishra",
+      "days": {},
+      "reason": "",
+      "updatedTracker": false,
+      "updatedClient": false,
+      "updatedWorkday": false,
+      "lastModified": "2026-05-12T14:46:27.465Z"
+    },
+    "F18031": {
+      "empId": "F18031",
+      "empName": "Daniel Pradeep Palina",
+      "days": {},
+      "reason": "",
+      "updatedTracker": false,
+      "updatedClient": false,
+      "updatedWorkday": false,
+      "lastModified": "2026-05-12T14:46:27.465Z"
+    },
+    "F18073": {
+      "empId": "F18073",
+      "empName": "Ruchita Mahato",
+      "days": {},
+      "reason": "",
+      "updatedTracker": false,
+      "updatedClient": false,
+      "updatedWorkday": false,
+      "lastModified": "2026-05-12T14:46:27.465Z"
+    }
+  }
+}

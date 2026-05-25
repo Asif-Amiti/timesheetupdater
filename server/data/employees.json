@@ -1,0 +1,549 @@
+[
+  {
+    "empId": "F10572",
+    "empName": "Aakash Arora",
+    "email": "aakash.arora@fractal.ai",
+    "allocationPercent": 100
+  },
+  {
+    "empId": "F12020",
+    "empName": "Aashish Kaushik",
+    "email": "aashish.kaushik@fractal.ai",
+    "allocationPercent": 100
+  },
+  {
+    "empId": "F16824",
+    "empName": "Abhishek Kamboj",
+    "email": "abhishek.kamboj@fractal.ai",
+    "allocationPercent": 100
+  },
+  {
+    "empId": "F16244",
+    "empName": "Abhishek Kumar",
+    "email": "abhishek.kumar7@fractal.ai",
+    "allocationPercent": 100
+  },
+  {
+    "empId": "F16906",
+    "empName": "Adarsh Kumar Singh",
+    "email": "adarsh.singh@fractal.ai",
+    "allocationPercent": 100
+  },
+  {
+    "empId": "F17557",
+    "empName": "Adithya Udupa",
+    "email": "adithya.udupa@fractal.ai",
+    "allocationPercent": 100
+  },
+  {
+    "empId": "F13935",
+    "empName": "Akash Badarinath",
+    "email": "akash.badarinath@fractal.ai",
+    "allocationPercent": 100
+  },
+  {
+    "empId": "F15043",
+    "empName": "Akash Srivastava",
+    "email": "akash.srivastava@fractal.ai",
+    "allocationPercent": 100
+  },
+  {
+    "empId": "F15089",
+    "empName": "Amal K",
+    "email": "amal.k@fractal.ai",
+    "allocationPercent": 100
+  },
+  {
+    "empId": "F15418",
+    "empName": "Ankit .",
+    "email": "ankit.1@fractal.ai",
+    "allocationPercent": 100
+  },
+  {
+    "empId": "F15194",
+    "empName": "Ankit Khandelwal",
+    "email": "ankit.khandelwal@fractal.ai",
+    "allocationPercent": 100
+  },
+  {
+    "empId": "F16266",
+    "empName": "Anupam Kumar Tiwari",
+    "email": "anupam.tiwari@fractal.ai",
+    "allocationPercent": 100
+  },
+  {
+    "empId": "F17311",
+    "empName": "Arbaz Ur Rehman Khan",
+    "email": "arbazur.khan@fractal.ai",
+    "allocationPercent": 100
+  },
+  {
+    "empId": "F15984",
+    "empName": "Arindom Goswami",
+    "email": "arindom.goswami@fractal.ai",
+    "allocationPercent": 100
+  },
+  {
+    "empId": "F07920",
+    "empName": "Arjit Sharma",
+    "email": "arjit.sharma@fractal.ai",
+    "allocationPercent": 100
+  },
+  {
+    "empId": "F08462",
+    "empName": "Ashokkumar Subramani",
+    "email": "ashokkumar.subramani@fractal.ai",
+    "allocationPercent": 100
+  },
+  {
+    "empId": "F07471",
+    "empName": "Avinash .",
+    "email": "avinash.1@fractal.ai",
+    "allocationPercent": 100
+  },
+  {
+    "empId": "F17726",
+    "empName": "Bhanu Priya",
+    "email": "bhanu.priya2@fractal.ai",
+    "allocationPercent": 100
+  },
+  {
+    "empId": "F05022",
+    "empName": "Chaitanya Deepak",
+    "email": "chaitanya.deepak@fractal.ai",
+    "allocationPercent": 100
+  },
+  {
+    "empId": "F18014",
+    "empName": "Chinmaya Mishra",
+    "email": "chinmaya.mishra@fractal.ai",
+    "allocationPercent": 100
+  },
+  {
+    "empId": "F18031",
+    "empName": "Daniel Pradeep Palina",
+    "email": "daniel.palina@fractal.ai",
+    "allocationPercent": 100
+  },
+  {
+    "empId": "F16221",
+    "empName": "Dijal Tom",
+    "email": "dijal.tom@fractal.ai",
+    "allocationPercent": 100
+  },
+  {
+    "empId": "F14094",
+    "empName": "Gokul Vasanth Susindran",
+    "email": "gokul.susindran@fractal.ai",
+    "allocationPercent": 100
+  },
+  {
+    "empId": "F09402",
+    "empName": "Gowtham G",
+    "email": "gowtham.g@fractal.ai",
+    "allocationPercent": 100
+  },
+  {
+    "empId": "F17891",
+    "empName": "Hithesh G R",
+    "email": "hithesh.g.r@fractal.ai",
+    "allocationPercent": 100
+  },
+  {
+    "empId": "F15226",
+    "empName": "Jaiyanth RB",
+    "email": "jaiyanth.rb@fractal.ai",
+    "allocationPercent": 100
+  },
+  {
+    "empId": "F08055",
+    "empName": "K Deepak",
+    "email": "k.deepak@fractal.ai",
+    "allocationPercent": 100
+  },
+  {
+    "empId": "F13133",
+    "empName": "Kartikey Rai",
+    "email": "kartikey.rai@fractal.ai",
+    "allocationPercent": 100
+  },
+  {
+    "empId": "F15951",
+    "empName": "Kesani Srichandana",
+    "email": "kesani.srichandana@fractal.ai",
+    "allocationPercent": 100
+  },
+  {
+    "empId": "F16291",
+    "empName": "Khasim Pannegatla",
+    "email": "khasim.pannegatla@fractal.ai",
+    "allocationPercent": 100
+  },
+  {
+    "empId": "F16247",
+    "empName": "Kiran Mai P",
+    "email": "kiran.p@fractal.ai",
+    "allocationPercent": 100
+  },
+  {
+    "empId": "F12415",
+    "empName": "Kunal Kumar",
+    "email": "kunal.kumar@fractal.ai",
+    "allocationPercent": 100
+  },
+  {
+    "empId": "F12766",
+    "empName": "Madhavi Latha Kotturu",
+    "email": "madhavilatha.kotturu@fractal.ai",
+    "allocationPercent": 100
+  },
+  {
+    "empId": "F16307",
+    "empName": "Mallik Saptarshi Thakur",
+    "email": "mallik.thakur@fractal.ai",
+    "allocationPercent": 100
+  },
+  {
+    "empId": "F14195",
+    "empName": "Manish Khare",
+    "email": "manish.khare@fractal.ai",
+    "allocationPercent": 100
+  },
+  {
+    "empId": "F16444",
+    "empName": "Manish Rajesh Sharma",
+    "email": "manish.sharma@fractal.ai",
+    "allocationPercent": 100
+  },
+  {
+    "empId": "F13899",
+    "empName": "Muhammed Suhail E K",
+    "email": "muhammed.suhail@fractal.ai",
+    "allocationPercent": 100
+  },
+  {
+    "empId": "F13753",
+    "empName": "Nagarjun K",
+    "email": "nagarjun.k@fractal.ai",
+    "allocationPercent": 100
+  },
+  {
+    "empId": "F11776",
+    "empName": "Neha Agrawal",
+    "email": "neha.agrawal@fractal.ai",
+    "allocationPercent": 100
+  },
+  {
+    "empId": "F14646",
+    "empName": "Nihar Bastia",
+    "email": "nihar.bastia@fractal.ai",
+    "allocationPercent": 100
+  },
+  {
+    "empId": "F11421",
+    "empName": "Pavan Kumar Reddy Tondapu",
+    "email": "pavankumarreddy.tondapu@fractal.ai",
+    "allocationPercent": 100
+  },
+  {
+    "empId": "F09792",
+    "empName": "Pinninti Ravindra",
+    "email": "pinninti.ravindra@fractal.ai",
+    "allocationPercent": 100
+  },
+  {
+    "empId": "F15834",
+    "empName": "Prajwal Athrey",
+    "email": "prajwal.athrey@fractal.ai",
+    "allocationPercent": 100
+  },
+  {
+    "empId": "F14085",
+    "empName": "Prakash Solanki",
+    "email": "prakash.solanki@fractal.ai",
+    "allocationPercent": 100
+  },
+  {
+    "empId": "F14985",
+    "empName": "Pranshul Gupta",
+    "email": "pranshul.gupta@fractal.ai",
+    "allocationPercent": 100
+  },
+  {
+    "empId": "F16097",
+    "empName": "Prasad Vinayagam Naidu",
+    "email": "prasad.naidu@fractal.ai",
+    "allocationPercent": 100
+  },
+  {
+    "empId": "F17300",
+    "empName": "Preet Kanwar Singh",
+    "email": "preet.singh@fractal.ai",
+    "allocationPercent": 100
+  },
+  {
+    "empId": "F16361",
+    "empName": "Rajarshi Pal",
+    "email": "rajarshi.pal@fractal.ai",
+    "allocationPercent": 100
+  },
+  {
+    "empId": "F16719",
+    "empName": "Rajat Kumar Kar",
+    "email": "rajat.kar@fractal.ai",
+    "allocationPercent": 100
+  },
+  {
+    "empId": "F14242",
+    "empName": "Rajiv Kumar",
+    "email": "rajiv.kumar@fractal.ai",
+    "allocationPercent": 100
+  },
+  {
+    "empId": "F16157",
+    "empName": "Rajkiran Edunuri",
+    "email": "rajkiran.edunuri@fractal.ai",
+    "allocationPercent": 100
+  },
+  {
+    "empId": "F17359",
+    "empName": "RAMASWAMY KOMMAVARAPU",
+    "email": "ramaswamy.kommavarapu@fractal.ai",
+    "allocationPercent": 100
+  },
+  {
+    "empId": "F02721",
+    "empName": "Ratul Ramchandani",
+    "email": "ratul.ramchandani@fractal.ai",
+    "allocationPercent": 100
+  },
+  {
+    "empId": "F17534",
+    "empName": "Rishang Santhpale",
+    "email": "rishang.santhpale@fractal.ai",
+    "allocationPercent": 100
+  },
+  {
+    "empId": "F14333",
+    "empName": "Ritobrita De",
+    "email": "ritobrita.de@fractal.ai",
+    "allocationPercent": 100
+  },
+  {
+    "empId": "F09515",
+    "empName": "Roshan Raghavendra Srinivas",
+    "email": "roshan.srinivas@fractal.ai",
+    "allocationPercent": 100
+  },
+  {
+    "empId": "F15145",
+    "empName": "Rubini Subash",
+    "email": "rubini.subash@fractal.ai",
+    "allocationPercent": 100
+  },
+  {
+    "empId": "F18073",
+    "empName": "Ruchita Mahato",
+    "email": "ruchita.mahato@fractal.ai",
+    "allocationPercent": 100
+  },
+  {
+    "empId": "F16895",
+    "empName": "Saanjeev Kumar K R",
+    "email": "saanjeev.r@fractal.ai",
+    "allocationPercent": 100
+  },
+  {
+    "empId": "F13601",
+    "empName": "Saravanan Bs",
+    "email": "saravanan.bs@fractal.ai",
+    "allocationPercent": 100
+  },
+  {
+    "empId": "F17997",
+    "empName": "Sasidharan N",
+    "email": "sasidharan.n@fractal.ai",
+    "allocationPercent": 100
+  },
+  {
+    "empId": "F08818",
+    "empName": "Satheesh Kumar Kaliappan",
+    "email": "satheesh.kumar@fractal.ai",
+    "allocationPercent": 100
+  },
+  {
+    "empId": "F12652",
+    "empName": "Seshadri Mohana Lakshmi Sahithi",
+    "email": "seshadri.mohana.lakshmi.sahithi@fractal.ai",
+    "allocationPercent": 100
+  },
+  {
+    "empId": "F15781",
+    "empName": "Shah Tapan",
+    "email": "shah.tapan@fractal.ai",
+    "allocationPercent": 100
+  },
+  {
+    "empId": "F15363",
+    "empName": "Shekhar Singh",
+    "email": "shekhar.singh@fractal.ai",
+    "allocationPercent": 100
+  },
+  {
+    "empId": "F14503",
+    "empName": "Shivangi Khanna",
+    "email": "shivangi.khanna@fractal.ai",
+    "allocationPercent": 100
+  },
+  {
+    "empId": "F16819",
+    "empName": "Shivani Kumari",
+    "email": "shivani.kumari@fractal.ai",
+    "allocationPercent": 100
+  },
+  {
+    "empId": "F08227",
+    "empName": "Shubham Bhaskar",
+    "email": "shubham.bhaskar@fractal.ai",
+    "allocationPercent": 100
+  },
+  {
+    "empId": "F11804",
+    "empName": "Shweta Dubey",
+    "email": "shweta.dubey@fractal.ai",
+    "allocationPercent": 100
+  },
+  {
+    "empId": "F13807",
+    "empName": "Shyam Sunder Thakur",
+    "email": "shyam.thakur@fractal.ai",
+    "allocationPercent": 100
+  },
+  {
+    "empId": "F09899",
+    "empName": "Sivani Madivada",
+    "email": "sivani.madivada@fractal.ai",
+    "allocationPercent": 100
+  },
+  {
+    "empId": "F16645",
+    "empName": "Soumen Das",
+    "email": "soumen.das@fractal.ai",
+    "allocationPercent": 100
+  },
+  {
+    "empId": "F14764",
+    "empName": "Sourav Das",
+    "email": "sourav.das@fractal.ai",
+    "allocationPercent": 100
+  },
+  {
+    "empId": "F04861",
+    "empName": "Subramanyam Samal",
+    "email": "subramanyam.samal@fractal.ai",
+    "allocationPercent": 100
+  },
+  {
+    "empId": "F14313",
+    "empName": "Sujith Kumar B",
+    "email": "sujith.b@fractal.ai",
+    "allocationPercent": 100
+  },
+  {
+    "empId": "F17922",
+    "empName": "Sunny .",
+    "email": "sunny..@fractal.ai",
+    "allocationPercent": 100
+  },
+  {
+    "empId": "F16597",
+    "empName": "Susatya Sinha",
+    "email": "susatya.sinha@fractal.ai",
+    "allocationPercent": 100
+  },
+  {
+    "empId": "F07286",
+    "empName": "Sushanth S",
+    "email": "sushanth.s@fractal.ai",
+    "allocationPercent": 100
+  },
+  {
+    "empId": "F14854",
+    "empName": "Sushmitha Suresh",
+    "email": "sushmitha.suresh@fractal.ai",
+    "allocationPercent": 100
+  },
+  {
+    "empId": "F15206",
+    "empName": "Trisha Ranjan",
+    "email": "trisha.ranjan@fractal.ai",
+    "allocationPercent": 100
+  },
+  {
+    "empId": "F11959",
+    "empName": "Utkarsh Chaudhary",
+    "email": "utkarsh.chaudhary@fractal.ai",
+    "allocationPercent": 100
+  },
+  {
+    "empId": "F13312",
+    "empName": "Utkarsh Sharma",
+    "email": "utkarsh.sharma2@fractal.ai",
+    "allocationPercent": 100
+  },
+  {
+    "empId": "F15410",
+    "empName": "Vaishnavee Awadhesh Gupta",
+    "email": "vaishnavee.gupta@fractal.ai",
+    "allocationPercent": 100
+  },
+  {
+    "empId": "F16600",
+    "empName": "Vaishnavi Prasad",
+    "email": "vaishnavi.prasad@fractal.ai",
+    "allocationPercent": 100
+  },
+  {
+    "empId": "F14490",
+    "empName": "Vanshika Jain",
+    "email": "vanshika.jain@fractal.ai",
+    "allocationPercent": 100
+  },
+  {
+    "empId": "F17876",
+    "empName": "Veeresh M",
+    "email": "veeresh.m@fractal.ai",
+    "allocationPercent": 100
+  },
+  {
+    "empId": "F12344",
+    "empName": "Vikash Kumar",
+    "email": "vikash.kumar@fractal.ai",
+    "allocationPercent": 100
+  },
+  {
+    "empId": "F17334",
+    "empName": "Vinayprasad Hiremath",
+    "email": "vinayprasad.hiremath@fractal.ai",
+    "allocationPercent": 100
+  },
+  {
+    "empId": "F16925",
+    "empName": "Vinodhkumar Santhakumar",
+    "email": "vinodhkumar.santhakumar@fractal.ai",
+    "allocationPercent": 100
+  },
+  {
+    "empId": "F15815",
+    "empName": "Yashwanth S",
+    "email": "yashwanth.s@fractal.ai",
+    "allocationPercent": 100
+  },
+  {
+    "empId": "F06490",
+    "empName": "Mahamad Asif",
+    "email": "mahamad.asif@fractal.ai",
+    "clientEmail": "",
+    "allocationPercent": 100
+  }
+]
