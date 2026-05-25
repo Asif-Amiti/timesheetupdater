@@ -1,4 +1,4 @@
-import { put, list, del, head } from '@vercel/blob';
+import { put, list, del, head, get, BlobNotFoundError } from '@vercel/blob';
 
 // Vercel Blob uses the BLOB_READ_WRITE_TOKEN env var automatically.
 
@@ -10,32 +10,34 @@ export async function ensureContainer(): Promise<void> {
   // Vercel Blob doesn't require container creation — no-op
 }
 
-// --- Helper: find blob URL by pathname ---
-async function findBlobUrl(pathname: string): Promise<string | null> {
-  const { blobs } = await list({ prefix: pathname });
-  const match = blobs.find(b => b.pathname === pathname);
-  return match?.url ?? null;
+// --- Helper: read blob content via SDK get() to bypass CDN cache ---
+async function readBlobContent(pathname: string): Promise<Buffer | null> {
+  try {
+    const result = await get(pathname, { access: 'public' });
+    if (!result || result.statusCode !== 200) return null;
+    const reader = result.stream.getReader();
+    const chunks: Uint8Array[] = [];
+    while (true) {
+      const { done, value } = await reader.read();
+      if (done) break;
+      if (value) chunks.push(value);
+    }
+    return Buffer.concat(chunks);
+  } catch (err) {
+    if (err instanceof BlobNotFoundError) return null;
+    throw err;
+  }
 }
 
 // --- Input blobs (uploaded files like MBRDI_TIMESHEET_PORTAL_INPUT.XLSX) ---
 
 export async function readInputBlob(blobName: string): Promise<string | null> {
-  const pathname = `input/${blobName}`;
-  const url = await findBlobUrl(pathname);
-  if (!url) return null;
-  const response = await fetch(url);
-  if (!response.ok) return null;
-  return response.text();
+  const buf = await readBlobContent(`input/${blobName}`);
+  return buf ? buf.toString('utf-8') : null;
 }
 
 export async function readInputBlobBuffer(blobName: string): Promise<Buffer | null> {
-  const pathname = `input/${blobName}`;
-  const url = await findBlobUrl(pathname);
-  if (!url) return null;
-  const response = await fetch(url);
-  if (!response.ok) return null;
-  const arrayBuffer = await response.arrayBuffer();
-  return Buffer.from(arrayBuffer);
+  return readBlobContent(`input/${blobName}`);
 }
 
 export async function writeInputBlobBuffer(blobName: string, content: Buffer, contentType: string): Promise<void> {
@@ -50,19 +52,20 @@ export async function writeInputBlobBuffer(blobName: string, content: Buffer, co
 
 export async function inputBlobExists(blobName: string): Promise<boolean> {
   const pathname = `input/${blobName}`;
-  const url = await findBlobUrl(pathname);
-  return url !== null;
+  try {
+    await head(pathname);
+    return true;
+  } catch (err) {
+    if (err instanceof BlobNotFoundError) return false;
+    throw err;
+  }
 }
 
 // --- Output blobs (app data: timesheets, overrides, holidays) ---
 
 export async function readOutputBlob(blobName: string): Promise<string | null> {
-  const pathname = `output/${blobName}`;
-  const url = await findBlobUrl(pathname);
-  if (!url) return null;
-  const response = await fetch(url);
-  if (!response.ok) return null;
-  return response.text();
+  const buf = await readBlobContent(`output/${blobName}`);
+  return buf ? buf.toString('utf-8') : null;
 }
 
 export async function writeOutputBlob(blobName: string, content: string): Promise<void> {
