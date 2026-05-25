@@ -44,6 +44,7 @@ export async function writeInputBlobBuffer(blobName: string, content: Buffer, co
     access: 'public',
     contentType,
     addRandomSuffix: false,
+    allowOverwrite: true,
   });
 }
 
@@ -70,6 +71,7 @@ export async function writeOutputBlob(blobName: string, content: string): Promis
     access: 'public',
     contentType: 'application/json',
     addRandomSuffix: false,
+    allowOverwrite: true,
   });
 }
 
