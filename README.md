@@ -22,7 +22,7 @@ timesheetupdater/
 │   │   │   └── admin.ts             # Admin routes (upload, manage)
 │   │   ├── services/
 │   │   │   ├── dataStore.ts         # JSON file read/write + blob storage
-│   │   │   ├── blobStore.ts         # Azure Blob Storage adapter
+│   │   │   ├── blobStore.ts         # Vercel Blob Storage adapter
 │   │   │   └── excelExport.ts       # ExcelJS workbook generation
 │   │   └── scripts/seedEmployees.ts # Import from Excel
 │   ├── data/                        # Seeded data (bundled for initial deploy)

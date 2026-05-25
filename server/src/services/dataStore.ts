@@ -63,14 +63,19 @@ export async function initDataStore(): Promise<void> {
   if (isBlobEnabled()) {
     try {
       await ensureContainer();
-      console.log('Data store: Azure Blob Storage');
+      console.log('Data store: Vercel Blob Storage');
     } catch (err) {
-      console.error('Failed to connect to Azure Blob Storage:', err);
+      console.error('Failed to initialize Vercel Blob Storage:', err);
       throw err;
     }
   } else {
-    ensureDataDir();
-    console.log('Data store: Local filesystem');
+    try {
+      ensureDataDir();
+      console.log('Data store: Local filesystem');
+    } catch (err) {
+      // On Vercel the filesystem is read-only; fall back to read-only mode
+      console.warn('Data store: Read-only filesystem (Vercel), skipping directory creation');
+    }
   }
 }
 
