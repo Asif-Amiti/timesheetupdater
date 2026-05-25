@@ -10,10 +10,10 @@ export async function ensureContainer(): Promise<void> {
   // Vercel Blob doesn't require container creation — no-op
 }
 
-// --- Helper: read blob content via SDK get() to bypass CDN cache ---
+// --- Helper: read blob content via SDK get() bypassing CDN cache ---
 async function readBlobContent(pathname: string): Promise<Buffer | null> {
   try {
-    const result = await get(pathname, { access: 'public' });
+    const result = await get(pathname, { access: 'public', useCache: false });
     if (!result || result.statusCode !== 200) return null;
     const reader = result.stream.getReader();
     const chunks: Uint8Array[] = [];
